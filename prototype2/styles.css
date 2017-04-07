@@ -1,0 +1,16 @@
+.navbar-fixed {
+  height: 104px;
+}
+.collection .collection-item.avatar {
+  padding-top: 20px;
+}
+#songs-collection .material-icons {
+  float: right;
+  font-size: 40px;
+  color: #008000;
+}
+#playlist-collection .material-icons {
+  float: right;
+  font-size: 40px;
+  color: #f00;
+}

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="initial-scale=1,user-scalable=no,minimum-scale=1,maximum-scale=1,width=device-width">
+        <title>Music App</title>
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.1/css/materialize.min.css">
+        <link rel="stylesheet" href="styles.css" type="text/css">
+    </head>
+    <body>
+      <div class="navbar-fixed">
+        <nav class="nav-extended">
+            <div class="nav-wrapper">
+              <a href="#" class="brand-logo">Music Library</a>
+              <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
+              <ul id="nav-mobile" class="right hide-on-med-and-down">
+                <li class="active"><a href="#">Music Library</a></li>
+              </ul>
+              <ul class="side-nav" id="mobile-demo">
+                <li class="active"><a href="#">Music Library</a></li>
+              </ul>
+            </div>
+            <div class="nav-content">
+              <ul class="tabs tabs-transparent">
+                <li class="tab" id="songs-menu-item"><a class="active" href="#songs">Songs</a></li>
+                <li class="tab" id="playlist-menu-item"><a href="#playlist">Playlist</a></li>
+              </ul>
+            </div>
+        </nav>
+      </div>
+      <div id="songs" class="col s12">
+        <ul id="songs-collection" class="collection">
+        </ul>
+      </div>
+      <div id="playlist" class="col s12">
+        <ul id="playlist-collection" class="collection">
+        </ul>
+        <div class="fixed-action-btn">
+          <a class="btn-floating btn-large waves-effect waves-light red" href="#save-modal"><i class="material-icons">save</i></a>
+        </div>
+      </div>
+      
+      <div id="save-modal" class="modal modal-fixed-footer">
+        <div class="modal-content">
+          <h4>Save Playlist</h4>
+          <p><input type="text"></p>
+        </div>
+        <div class="modal-footer">
+          <a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat ">Cancel</a>
+          <a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat ">Save</a>
+        </div>
+      </div>
+        
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.1/js/materialize.min.js"></script>
+        <script type="text/javascript" src="vendor/slip.js"></script>
+        <script type="text/javascript" src="scripts.js"></script>
+    </body>
+</html>
